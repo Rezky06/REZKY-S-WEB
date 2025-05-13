@@ -50,9 +50,9 @@ footer {
   
 }
 .footer-social img {
-  width: 32px;     /* ubah sesuai ukuran yang diinginkan */
-  height: 32px;    /* ubah sesuai ukuran yang diinginkan */
-  margin: 5px;  /* jarak antar ikon */
+  width: 32px;     
+  height: 32px;    
+  margin: 5px;  
 }
 
 
@@ -72,7 +72,7 @@ footer {
   margin-left: 15px;
   color: #000;
   font-size: 16px;
-  text-decoration: none; /* agar tidak ada underline */}
+  text-decoration: none;}
 
 .footer hr {
   margin: 20px 0 10px;
@@ -148,11 +148,20 @@ nav {
     margin: 0 auto;
 }
 
-.social-icons img {
-  width: 32px;     /* Ubah sesuai kebutuhan, misal 24px, 40px, dst */
-  height: 32px;
-  margin-right: 10px;  /* Memberi jarak antar ikon */
+.social-icons a {
+  text-decoration: none;     
+  border: none;              
+  outline: none;             
 }
+
+.social-icons img {
+  width: 32px;              
+  height: 32px;
+  margin-right: 10px;        
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .hero-text {
     max-width: 700px;
 }
@@ -229,7 +238,7 @@ nav {
 }
 
 .portfolio-item {
-    background: #fff;
+    background: #efe6e1;
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -285,8 +294,8 @@ nav {
 
 .view-all-container {
   text-align: center;
-  padding: 0 0 40px !important; /* Paksa hilangkan padding atas */
-  margin-top: -30px !important; /* Paksa naik */
+  padding: 0 0 40px !important; 
+  margin-top: -30px !important; 
 }
 
 
@@ -477,13 +486,12 @@ nav {
   }
 
   .article-cards .card {
-    width: 90%; /* Mengatur lebar card agar lebih ramping */
-    margin-bottom: 30px; /* Memberikan jarak antar card */
-  }
+    width: 90%; 
+    margin-bottom: 30px; }
 
   .blog-images {
-    width: 80%; /* Lebar gambar blog lebih lebar */
-    grid-template-columns: repeat(2, 1fr); /* Gambar blog dalam dua kolom */
+    width: 80%; 
+    grid-template-columns: repeat(2, 1fr); 
     right: unset;
     margin: 0 auto;
   }
@@ -501,9 +509,9 @@ nav {
 
   .project-cards .card,
   .article-cards .card {
-    width: 100%; /* Mengatur card agar mengambil 100% lebar */
+    width: 100%; 
     max-width: 300px;
-    margin: 0 auto 30px; /* Memberikan margin agar rapi */
+    margin: 0 auto 30px; 
   }
 
   .blog-images {
@@ -512,7 +520,6 @@ nav {
   }
 }
 
-/* About Section */
 /* About Section */
 body {
     margin: 0;
@@ -818,12 +825,12 @@ main {
     gap: 30px;
     transition: transform 0.3s ease;
     border: 2px solid #101010;
-    position: relative; /* Tambahan penting untuk positioning tombol */
-    min-height: 200px;   /* Tambahan opsional supaya ada ruang bawah */
-    width: 100%; /* Atur lebar (bisa px, %, atau lainnya) */
-    max-width: 800px; /* Batas maksimum lebar */
-    min-height: 200px; /* Tinggi minimum */
-    height: auto; /* Tinggi menyesuaikan konten */
+    position: relative; 
+    min-height: 200px;   
+    width: 100%; 
+    max-width: 800px; 
+    min-height: 200px; 
+    height: auto; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -977,7 +984,7 @@ nav {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Josefin Sans', sans-serif;
-    visibility: hidden; /* Menghilangkan tanda panah */
+    visibility: hidden; 
 }
 
 .gallery-next:hover {
@@ -1091,7 +1098,7 @@ nav {
 
 .blog-posts {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Diubah menjadi 2 kolom */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
     margin: 0 100px;
     padding: 20px 0;
@@ -1107,7 +1114,7 @@ nav {
 
 .blog-card img {
     width: 100%;
-    height: 300px; /* Tinggi gambar disesuaikan */
+    height: 300px; 
     object-fit: cover;
     display: block;
 }
@@ -1183,8 +1190,7 @@ nav {
 }
 
 .like:hover, .action-icons span:hover {
-    color: #ff4b6e; /* Warna merah muda saat hover */
-}
+    color: #ff4b6e; }
 
 @media (max-width: 1024px) {
     .blog-posts {
@@ -1831,22 +1837,22 @@ button:hover {
   font-size: 0.9rem;
   color: #000000;
   text-decoration: none;
-  font-weight: 500; /* Tambahkan ketebalan font */
-  letter-spacing: 0.3px; /* Perbaikan spacing huruf */
-  padding: 6px 12px; /* Padding lebih seimbang */
-  border-radius: 20px; /* Border radius lebih besar */
-  transition: all 0.3s ease; /* Efek transisi lebih halus */
-  border: 1px solid transparent; /* Untuk persiapan hover */
+  font-weight: 500; 
+  letter-spacing: 0.3px; 
+  padding: 6px 12px; 
+  border-radius: 20px; 
+  transition: all 0.3s ease; 
+  border: 1px solid transparent; 
   display: inline-flex;
   align-items: center;
-  gap: 4px; /* Jika ingin menambahkan icon */
+  gap: 4px; 
 }
 
 .section-header .see-all:hover {
   color: #967F70;
-  background-color: rgba(13, 13, 13, 0.08); /* Efek hover lebih subtle */
-  border-color: rgba(0, 123, 255, 0.2);
-  transform: translateY(-1px); /* Efek lift halus */
+  background-color: rgba(13, 13, 13, 0.08); 
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px); 
 }
 
 /* Opsi dengan icon panah */
@@ -1972,19 +1978,19 @@ button:hover {
 }
 .card.blog {
   display: flex;
-  align-items: center; /* Tengah secara vertikal */
-  gap: 16px; /* Jarak antara gambar dan teks */
+  align-items: center; 
+  gap: 16px; 
 }
 
 .blog-cover {
-  width: 500px; /* Atur ukuran gambar sesuai kebutuhan */
+  width: 500px; 
   height: auto;
 }
 
 .blog-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Biar teks rata kiri dalam kolom kanan */
+  align-items: flex-start;
 }
 
 .blog-text h3 {
@@ -2007,7 +2013,6 @@ button:hover {
 }
 
 /* Project Gallery */
-/* Project Gallery - untuk gambar tunggal yang lebih kecil */
 .project-gallery {
   display: flex;
   justify-content: center;
@@ -2016,8 +2021,8 @@ button:hover {
 
 .project-gallery img {
   width: auto; 
-  max-width: 600px; /* Diperkecil dari 800px ke 600px */
-  max-height: 400px; /* Diperkecil dari 500px ke 400px */
+  max-width: 600px; 
+  max-height: 400px; 
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
