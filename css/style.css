@@ -12,77 +12,97 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px;
+  padding: 5px 10px;
   background-color: transparent;
 }
 
 
-#footeraseli
-footer {
-  background: #e6ddd5;
-  padding: 50px 100px 20px;
-  margin-top: 100px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
+/* Footer Styles */
 .footer {
-  background-color: #e2d2c8;
-  padding: 30px 40px 15px;
-  font-family: sans-serif;
-  color: #000;
+    width: 100%;
+    background-color: #e6ddd5;
+    padding: 40px 60px 20px;
+    margin-top: 100px;
 }
 
 .footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .footer-logo img {
-  height: 115px;
-  
+    height: 100px;
+    width: auto;
 }
-.footer-social img {
-  width: 32px;     
-  height: 32px;    
-  margin: 5px;  
-}
-
 
 .footer-nav {
-  display: flex;
-  gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 
 .footer-nav a {
-  text-decoration: none;
-  color: #000;
-  font-size: 15px;
-  font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
-.footer-social a {
-  margin-left: 15px;
-  color: #000;
-  font-size: 16px;
-  text-decoration: none;}
+.footer-nav a:hover {
+    color: #967F70;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social img:hover {
+    opacity: 0.7;
+}
 
 .footer hr {
-  margin: 20px 0 10px;
-  border: none;
-  border-top: 1px solid #888;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 .footer-bottom {
-  font-size: 14px;
-  color: #444;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 20px 15px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
 }
 
 
@@ -127,76 +147,78 @@ html, body {
     background-color: #f5f0ed;
 }
 
-/* NAVIGASI */
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 100px;
-  background-color: tranparent;
-}
-
-/* HERO SECTION */
+/* Hero Section */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px 40px 20px; /* atas 0, bawah 40px */
-    background-color: #f6f1eb;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.social-icons a {
-  text-decoration: none;     
-  border: none;              
-  outline: none;             
-}
-
-.social-icons img {
-  width: 32px;              
-  height: 32px;
-  margin-right: 10px;        
-  display: inline-block;
-  vertical-align: middle;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .hero-text {
-    max-width: 700px;
+    flex: 1;
+    max-width: 600px;
 }
 
 .hero-text p:first-child {
-    font-size: 32px;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.hero-text h1 {
-    font-size: 62px;
+    font-size: 24px;
     color: #967F70;
-    margin-bottom: 15px;
-    line-height: 1.2;
+    margin-bottom: 10px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
 .hero-text .desc {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #000000;
-    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image img {
     width: 100%;
-    max-width: 500px;
     height: auto;
+    object-fit: contain;
 }
 
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
 
-/* RESPONSIF UNTUK LAYAR KECIL */
-@media (max-width: 768px) {
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
     .hero {
+        padding: 40px 20px;
         flex-direction: column;
         text-align: center;
     }
@@ -205,20 +227,30 @@ nav {
         max-width: 100%;
     }
 
-    nav {
-        flex-direction: column;
-        padding: 20px;
+    .hero-image {
+        max-width: 400px;
+        margin: 0 auto;
     }
 
-    .hero-image img {
-        max-width: 100%;
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        max-width: 300px;
     }
 }
 
 
 /* Featured Projects */
 .portfolio-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -232,7 +264,7 @@ nav {
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 45px;
     padding: 40px 120px;
     background-color: #f6f1eb;
 }
@@ -244,7 +276,7 @@ nav {
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     display: flex;
     width: 387px;
-    height: 525px;
+    height: 570px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -267,22 +299,23 @@ nav {
 }
 
 .portfolio-content h3 {
-    font-size: 20px;
+    font-size: 24px;
     color: #333;
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: bold
 }
 
 .portfolio-content p {
     color: #666;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .view-more {
     color: #967F70;
     text-decoration: none;
+    margin-top: auto;
     font-size: 14px;
 }
 
@@ -352,7 +385,7 @@ nav {
 
 /* SECTION ARTICLES */
 .articles {
-  padding: 40px 100px;
+  padding: 100px 100px;
   text-align: center;
 }
 
@@ -368,7 +401,7 @@ nav {
 .article-cards {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
@@ -441,7 +474,7 @@ nav {
 
 /* JUDUL ARTIKEL */
 .article-cards .card h3 {
-  font-size: 28px;
+  font-size: px;
   color: #000;
   margin-bottom: 15px;
   font-weight: 600;
@@ -451,7 +484,7 @@ nav {
 /* TEKS RINGKASAN */
 .article-cards .card p {
   color: #666;
-  font-size: 15px;
+  font-size: 22px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -464,7 +497,7 @@ nav {
   border-radius: 20px;
   border: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 15px;
   display: inline-block;
   transition: all 0.3s ease;
@@ -531,7 +564,7 @@ body {
 
 .about-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 40px;
 }
 
@@ -540,7 +573,7 @@ body {
     display: flex;
     gap: 80px;
     align-items: flex-start;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .intro-content {
@@ -576,6 +609,46 @@ body {
 }
 
 /* Skills Section */
+.skills-content-section {
+    padding: 40px 0px;
+    margin-bottom: 90px;
+}
+
+.skills-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-left: auto; /* Geser ke kanan */
+    align-items: flex-start;
+    justify-content: flex-end; /* Konten ke kanan */
+    flex-wrap: nowrap;
+}
+
+.skills-content {
+    flex: 1;
+    min-width: 200px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.graph-image {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center; /* Optional: jika mau vertikal tengah juga */
+    margin:  auto; /* Jika ingin .graph-image sendiri di tengah */
+}
+
+.graph-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    width: 75%;
+    height: auto;
+}
 .skills-section {
     margin-bottom: 100px;
 }
@@ -584,7 +657,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .skills-header h2 {
@@ -594,23 +667,9 @@ body {
 
 }
 
-.graph-image {
-    width: 300px;
-}
-
-.graph-image img {
-    width: 100%;
-    height: auto;
-}
-
-.skills-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
 
 .skill-item {
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .skill-item h3 {
@@ -622,7 +681,7 @@ body {
 }
 
 .skill-item p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.6;
     color: #444;
     font-family: 'Josefin Sans', sans-serif;
@@ -631,113 +690,151 @@ body {
 
 
 /* Experience Section */
-
 .experience-section {
-    margin-bottom: 100px;
-}
-.experience-section .section-header h2 {
-    font-size: 48px;
-    font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: none;
-
-
+    padding: 40px 0px;
+    margin-bottom: 90px;
 }
 
-
-.section-header {
+.experience-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 50px;
-}
-
-.section-header h2 {
-    font-size: 42px;
-    font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif;
-
-
-
-}
-
-.certificate-image {
-    width: 300px;
-}
-
-.experience-content {
-    max-width: 600px;
-}
-
-.experience-item {
+    align-items: center;
     margin-bottom: 30px;
 }
 
-.experience-item h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif;
-
-}
-
-.experience-item ul {
-    list-style: none;
-    padding: 0;
-}
-
-.experience-item li {
-    font-size: 15px;
-    margin-bottom: 8px;
-    color: #444;
-    padding-left: 15px;
-    position: relative;
-    font-family: 'Josefin Sans', sans-serif;
-    
-}
-
-.experience-item li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-}
-
-/* Education Section */
-.education-section {
-    margin-bottom: 60px;
-}
-
-.education-section .section-header h2 {
+.experience-header h2 {
     font-size: 48px;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
-    text-transform: none;
 }
 
-.education-icon {
-    width: 300px;
+.experience-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: flex-start; /* lebih aman */
+    flex-wrap: wrap
+}
+
+.experience-content {
+    flex: 1;
+    min-width: 200px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experience-item {
+    max-width: 800px;
+}
+
+.experience-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.experience-item ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    padding-left: 20px;
+}
+
+.certificate-image-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-left: auto; /* Geser ke kanan */
+    align-items: flex-start;
+    justify-content: flex-end; /* Konten ke kanan */
+    flex-wrap: nowrap;
+}
+
+.certificate-image {
+    flex: 1;
+    min-width: 400px;
+    max-width: 50px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center; /* Optional: jika mau vertikal tengah juga */
+    margin:  auto; /* Jika ingin .graph-image sendiri di tengah */
+}
+
+
+.certificate-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    width: 75%;
+    height: auto;
+}
+
+
+/* Education Section */
+.education-content-section {
+    padding: 40px 0px;
+    margin-bottom: 90px;
+}
+
+.education-content-section h2 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: -40px;
+}
+
+.education-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .education-content {
-    max-width: 600px;
+    flex: 1;
+    min-width: 200px;
+    max-width: 610px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .education-item {
-    margin-bottom: 25px;
+    max-width: 800px;
 }
 
 .education-item h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
+    font-size: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .education-item p {
-    font-size: 15px;
+    font-size: 18px;
     color: #444;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+.education-image {
+    flex: 0 0 auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+.education-image img {
+    width: 120%;
+    height: auto;
+    display: block;
+}
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -903,13 +1000,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
+    padding: 5px 45px;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 24px;
+.logo img {
+    max-height: 150px;       
+    display: block;         
+    margin: 0;
+    padding: 0;
 }
+
 
 /* === WELCOME SECTION === */
 .welcome-section {
@@ -1251,8 +1351,8 @@ main {
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 48px;
+    margin-bottom: 40px;
     font-family: 'Josefin Sans', sans-serif;
     
 }
@@ -1821,7 +1921,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: -75px;
 }
 
 .section-header h2 {
