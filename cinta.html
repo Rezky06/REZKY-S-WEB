@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <nav>
+
+<nav>
   <div class="logo">
     <img src="image/logo.png" alt="Logo Gambar" class="nav-logo" />
   </div>
+
   <div class="menu">
     <a href="index.html">Home</a>
     <a href="About.html">About</a>
@@ -19,9 +20,20 @@
     <a href="blog.html">Blog</a>
     <a href="Contact.html">Contact</a>
   </div>
-</nav>
-  </header>
 
+  <div class="search-bar">
+    <form action="search.html" method="get" class="search-form">
+      <input type="text" name="query" placeholder="Search..." required />
+      <span class="search-icon">
+        <!-- Ikon garis SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </span>
+    </form>
+  </div>
+</nav>
 <article class="blog-post">
     <div class="post-header">
         <div class="author-info">
