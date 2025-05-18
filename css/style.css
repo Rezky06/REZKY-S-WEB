@@ -348,7 +348,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 45px;
-    padding: 40px 120px;
+    padding: 40px 20px;
     background-color: #f6f1eb;
 }
 
@@ -449,13 +449,33 @@ nav {
     transform: translateX(5px);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .portfolio-grid {
-        padding: 30px 20px;
-    }
+  .portfolio-item {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .portfolio-image {
+    height: 200px;
+  }
+
+  .portfolio-content p {
+    font-size: 16px;
+  }
 }
+
 
 
 
