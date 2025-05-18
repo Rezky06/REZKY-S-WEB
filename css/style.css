@@ -346,7 +346,7 @@ nav {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 45px;
     padding: 40px 120px;
     background-color: #f6f1eb;
@@ -451,19 +451,12 @@ nav {
 
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 40px 60px;
+        padding: 30px 20px;
     }
 }
 
-@media (max-width: 768px) {
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        padding: 40px 20px;
-    }
-}
 
 
 /* SECTION ARTICLES */
