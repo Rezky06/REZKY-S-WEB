@@ -148,30 +148,30 @@ html, body {
     background-color: #f5f0ed;
 }
 
+/* Hero Section */
 .hero {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .hero-text {
     flex: 1;
     max-width: 600px;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 .hero-text p:first-child {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #967F70;
     margin-bottom: 10px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 48px;
     margin-bottom: 20px;
     color: #000;
     font-family: 'Josefin Sans', sans-serif;
@@ -179,7 +179,7 @@ html, body {
 }
 
 .hero-text .desc {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.8;
     color: #444;
     margin-bottom: 30px;
@@ -191,15 +191,15 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 }
 
 .hero-image img {
-    width: 100%;
+    width: 135%;
     height: auto;
     object-fit: contain;
-    padding-left: 0;
+    padding-left: 190px;
 }
+
 
 .social-icons {
     display: flex;
@@ -217,15 +217,23 @@ html, body {
     opacity: 0.7;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 1024px) {
     .hero {
+        padding: 40px 20px;
         flex-direction: column;
         text-align: center;
     }
+
     .hero-text {
-        padding-left: 0;
+        max-width: 100%;
     }
+
+    .hero-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
     .social-icons {
         justify-content: center;
     }
@@ -233,14 +241,13 @@ html, body {
 
 @media (max-width: 768px) {
     .hero-text h1 {
-        font-size: 2.25rem;
+        font-size: 36px;
     }
+
     .hero-image {
         max-width: 300px;
-        margin-top: 30px;
     }
 }
-
 
 
 
