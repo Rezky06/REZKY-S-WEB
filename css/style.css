@@ -220,18 +220,25 @@ html, body {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero {
-        padding: 40px 20px;
         flex-direction: column;
         text-align: center;
+        padding: 40px 20px;
     }
 
     .hero-text {
         max-width: 100%;
+        padding-left: 0;
     }
 
     .hero-image {
-        max-width: 400px;
+        max-width: 100%;
         margin: 0 auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+        padding-left: 0;
     }
 
     .social-icons {
@@ -244,10 +251,53 @@ html, body {
         font-size: 36px;
     }
 
+    .hero-text p:first-child {
+        font-size: 20px;
+    }
+
+    .hero-text .desc {
+        font-size: 14px;
+    }
+
     .hero-image {
         max-width: 300px;
     }
+
+    .hero-image img {
+        max-width: 100%;
+        padding-left: 0;
+    }
 }
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p:first-child {
+        font-size: 18px;
+    }
+
+    .hero-text .desc {
+        font-size: 13px;
+    }
+
+    .hero-image {
+        max-width: 220px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
 
 
 
